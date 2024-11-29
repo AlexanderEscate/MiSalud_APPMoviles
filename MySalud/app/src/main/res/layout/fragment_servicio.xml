@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c50"
+    android:id="@+id/servicio"
+    tools:context=".fragmentos.ServicioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Barra superior con el título -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/titleServicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nuestros Servicios"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Contenedor de servicios en un ScrollView para desplazarse si hay muchos servicios -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/servicesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp" />
+        </ScrollView>
+
+        <!-- Botón de regresar debajo de los servicios -->
+        <Button
+            android:id="@+id/fragservicioBack"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/background_list"
+            android:text="@string/BtnRegresar"
+            android:textAllCaps="false"
+            android:textColor="@color/c950"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:drawableTint="@color/gris"
+            android:paddingStart="16dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.CuentaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Editar Cuenta"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linaerLayoutBlock1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/logo1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/background_list"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Nombres"
+                        android:textColor="@color/c900"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:hintEnabled="false"> <!-- Desactiva la etiqueta flotante -->
+
+                        <EditText
+                            android:id="@+id/regTxtNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableTint="@color/c900"
+                            android:ems="10"
+                            android:hint="@string/regTxtNombre"
+                            android:inputType="text"
+                            android:padding="12dp"
+                            android:textColor="@color/c950"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <!--2-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Apellidos"
+                        android:textColor="@color/c900"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:hintEnabled="false"> <!-- Desactiva la etiqueta flotante -->
+
+                        <EditText
+                            android:id="@+id/regTxtApellido"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableTint="@color/c900"
+                            android:hint="Ingresa tu Apellido"
+                            android:inputType="text"
+                            android:padding="12dp"
+                            android:textColor="@color/c950"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <!--2-->
+                    <!--3-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Correo"
+                        android:textColor="@color/c900"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:hintEnabled="false"> <!-- Desactiva la etiqueta flotante -->
+
+                        <EditText
+                            android:id="@+id/regTxtCorreo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableTint="@color/c900"
+                            android:hint="Ingresa tu correo"
+                            android:inputType="textEmailAddress"
+                            android:padding="12dp"
+                            android:textColor="@color/c950"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--4-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Contraseña"
+                        android:textColor="@color/c900"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true"> <!-- Desactiva la etiqueta flotante -->
+
+                        <EditText
+                            android:id="@+id/regTxtPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableTint="@color/c900"
+                            android:hint="Ingresa tu contraseña"
+                            android:inputType="textPassword"
+                            android:padding="12dp"
+                            android:textColor="@color/c950"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Confirmar Contraseña"
+                        android:textColor="@color/c900"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true"> <!-- Desactiva la etiqueta flotante -->
+
+                        <EditText
+                            android:id="@+id/regTxtConfPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="25dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableTint="@color/c900"
+                            android:hint="Confirma tu contraseña"
+                            android:inputType="textPassword"
+                            android:padding="12dp"
+                            android:textColor="@color/c950"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!---botones-->
+                        <Button
+                            android:id="@+id/fragCuentaBtnEliminar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_list"
+                            android:drawableStart="@drawable/delete_icon_24"
+                            android:drawableTint="@color/c950"
+                            android:paddingStart="16dp"
+                            android:text="Eliminar"
+                            android:textAllCaps="false"
+                            android:textColor="@color/c950"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/fragCuentabtnActualizar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button"
+                            android:drawableEnd="@drawable/edit_icon_24"
+                            android:drawableTint="@color/c50"
+                            android:paddingEnd="14dp"
+                            android:text="Actualizar"
+                            android:textAllCaps="false"
+                            android:textColor="@color/c50"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MySalud</string>
+
+    <string name="logTxtCorreo">Correo</string>
+    <string name="logTxtClave">Contraseña</string>
+    <string name="LogTxtPregunta">¿Aún no estas Registrado?</string>
+    <string name="LogTxtCopy">Derechos Reservados</string>
+
+    <!--Botones-->
+    <string name="BtnIngresar">Iniciar Sesion</string>
+    <string name="BtnRegistrar">Registrate Ahora!</string>
+    <string name="BtnRegistrarCita">Registrar Cita</string>
+    <string name="BtnRegresar">Regresar</string>
+    <string name="ChkSesionRecordar">Recordar Contraseña</string>
+
+    <!--TG-->
+    <string name="TxtNombres">Nombres</string>
+    <string name="TxtApellidos">Apellidos</string>
+    <string name="TxtCorreo">Correo</string>
+    <string name="TxtContraseña">Contraseña</string>
+    <string name="TxtConfirmar">Confirmar Contraseña</string>
+
+    <string name="regTxtNombre">Ingresa tu nombre</string>
+
+    <!--R y G-->
+    <string name="regTxtRegistrate">Crear Cuenta</string>
+    <string name="rygTxtNombre">Ingresa tu nombre</string>
+    <string name="rygTxtApellido">Ingresa tu apellido</string>
+    <string name="rygTxtCorreo">Ingresa tu correo</string>
+    <string name="rygTxtContraseña">Ingresa tu contraseña</string>
+    <string name="rygTxtConfirma">Confirma tu contraseña</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Menu-->
+    <string name="menutxtTitulo">\"Tu salud, a un clic de distancia. Agenda tu consulta ya\"</string>
+    <string name="service_image">Imagen del servicio</string>
+
+    <!--fragment Sugerencia-->
+    <string name="fraseSugerencia">Ayúdanos a mejorar</string>
+    <string name="fraseSugerencia2">Tu opinión cuenta, ¡compártela con nosotros!</string>
+    <!--fragment cita-->
+    <string name="textViewTituloFrag">Reserva tu Cita</string>
+    <string name="textViewTituloDescFrag">Agenda tu cita, tu salud es \nprimero</string>
+</resources>

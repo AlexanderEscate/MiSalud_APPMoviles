@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Menu"
+        android:icon="@drawable/home_icon"
+        android:id="@+id/menu"
+        />
+    <item android:title="Cuenta"
+        android:icon="@drawable/cuenta_icon"
+        android:id="@+id/cuenta"
+        />
+
+    <item android:title="Sugerencias"
+        android:icon="@drawable/sugerencia_icon"
+        android:id="@+id/sugerencias"
+        />
+
+    <item android:title="Cita"
+        android:icon="@drawable/calendar_icon"
+        android:id="@+id/cita"/>
+
+    <item android:title="Configuración"
+        android:icon="@drawable/config_icon"
+        android:id="@+id/config"/>
+</menu>
+
